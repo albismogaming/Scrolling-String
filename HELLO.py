@@ -3,7 +3,7 @@ import string
 import sys
 
 def scroll_print(word, delay=0.1):
-    alphabet = string.ascii_uppercase + string.ascii_lowercase
+    alphabet = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
     accumulated_output = ""  # String to accumulate the output
     for char in word:
         if char not in alphabet:
